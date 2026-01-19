@@ -1,11 +1,11 @@
-# IOT Patent Web System
+# UIC Patent Portal
 
 A comprehensive patent application management system for Chandigarh University's Innovation Cell.
 
 ## Project Structure
 
 ```
-IOT-PATENT-WEB-SYSTEM/
+patent-portal/
 ├── backend/                 # Flask backend application
 │   ├── app.py              # Main Flask application
 │   ├── requirements.txt    # Python dependencies
@@ -22,6 +22,9 @@ IOT-PATENT-WEB-SYSTEM/
 ├── scripts/                # Setup and utility scripts
 ├── tests/                  # Test files and debugging tools
 ├── docs/                   # Documentation files
+├── Procfile               # Render deployment config
+├── render.yaml            # Render service config
+├── requirements.txt       # Root dependencies for deployment
 └── README.md              # This file
 ```
 
@@ -53,6 +56,14 @@ IOT-PATENT-WEB-SYSTEM/
    ```
 
 4. Open your browser and go to: `http://localhost:5000`
+
+## Deployment
+
+This project is configured for deployment on Render.com:
+
+1. Push to GitHub
+2. Connect your GitHub repo to Render
+3. Render will automatically deploy using the configuration files
 
 ## Google Integrations
 
